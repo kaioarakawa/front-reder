@@ -22,4 +22,4 @@ jobs:
       - name: Disparar deploy no Render
         run: curl -fsSL -X POST "$DEPLOY_HOOK"
         env:
-          DEPLOY_HOOK: https://api.render.com/deploy/srv-datf8hc9v7es738ftlfg?key=gziHVFI4Cg0
+          DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
